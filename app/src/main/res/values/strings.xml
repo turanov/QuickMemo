@@ -2,13 +2,13 @@
     <string name="app_name">Quick Memo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="no_data">Пока пусто</string>
+    <string name="no_data">No data</string>
     <string name="description">description</string>
-    <string name="sort_by">Сортировать по</string>
-    <string name="date_of_created">Дата создания</string>
-    <string name="date_of_last_update">Дата последного обновления</string>
-    <string name="delete_all">Удалить всех</string>
-    <string name="search">Поиск в заметках</string>
-    <string name="save">Сохранить</string>
-    <string name="delete">Удалить</string>
+    <string name="sort_by">Search by</string>
+    <string name="date_of_created">Date of creation</string>
+    <string name="date_of_last_update">Date of last update</string>
+    <string name="delete_all">Delete all</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
 </resources>
