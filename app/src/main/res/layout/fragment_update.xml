@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="args"
+            type="kg.turanov.quickmemo.fragments.update.UpdateFragmentArgs" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.update.UpdateFragment">
+
+        <EditText
+            android:id="@+id/update_et_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_title"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Title"
+            android:text="@{args.currentItem.title}"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/padding_left_24dp"
+            android:paddingEnd="@dimen/padding_left_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/update_et_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="@{args.currentItem.description}"
+            android:gravity="top|start"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:paddingStart="@dimen/padding_left_24dp"
+            android:paddingTop="@dimen/padding_top_16dp"
+            android:paddingEnd="@dimen/padding_right_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_et_title"
+            app:layout_goneMarginTop="@dimen/margin_16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
